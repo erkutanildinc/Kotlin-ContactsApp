@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp">
+
+    <ImageView
+        android:id="@+id/listItemIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/userInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/bubblegum_regular"
+        android:gravity="start"
+        android:paddingStart="30dp"
+        android:text="Erkut Anıl Dinç - School"
+        android:textSize="26dp"
+        android:textColor="#EA5835"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/listItemIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"></TextView>
+
+    <TextView
+        android:id="@+id/userPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="5382029720"
+        android:textSize="18dp"
+        android:paddingStart="30dp"
+        android:fontFamily="@font/bubblegum_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toEndOf="@+id/listItemIcon"
+        app:layout_constraintTop_toBottomOf="@+id/userInfoTextView"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

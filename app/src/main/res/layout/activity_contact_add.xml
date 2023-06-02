@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal"
+    tools:context=".ContactAdd">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="326dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/wave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/bubblegum_regular"
+            android:text="Contactbook"
+            android:textSize="45dp"
+            android:textColor="@color/gunmetal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/layoutNameSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/contactNameEditText"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Name..."
+            android:fontFamily="@font/bubblegum_regular"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+        <EditText
+            android:id="@+id/contactSurnameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:fontFamily="@font/bubblegum_regular"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Surname..."
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@+id/contactNameEditText"
+            android:paddingStart="20dp" />
+
+        <Spinner
+            android:id="@+id/groupSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner_group"
+            app:layout_constraintTop_toBottomOf="@+id/contactPhoneEditText">
+        </Spinner>
+
+        <EditText
+            android:id="@+id/contactPhoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bubblegum_regular"
+            android:background="@drawable/edittext_background"
+            android:ems="10"
+            android:hint="Phone..."
+            android:inputType="number"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/contactSurnameEditText"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/contactAddressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="start"
+            android:singleLine="false"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:hint="Address..."
+            android:fontFamily="@font/bubblegum_regular"
+            android:inputType="textMultiLine"
+            android:paddingStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/groupSpinner" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginHorizontal="70dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/radius_btn"
+            android:backgroundTint="@color/powderBlue"
+            android:fontFamily="@font/bubblegum_regular"
+            android:text="Add Contact"
+            android:lineSpacingExtra="3dp"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactAddressEditText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
